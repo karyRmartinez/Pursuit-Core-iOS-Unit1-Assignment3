@@ -127,3 +127,111 @@ Your reduce will need to support:
 <p align="center">
     <img src="https://github.com/joinpursuit/Pursuit-Core-iOS-Unit1-Assignment3/blob/master/Images/cli-calculator.gif" width="800" height="598" />
 </p>
+
+
+
+//HAVING PROBLEMS SUBMITTING ON  COMMAND LINE
+
+
+```var operations: ([String: (Double, Double) -> Double]) = ["+": { $0 + $1 },
+"-": { $0 - $1 },
+"*": { $0 * $1 },
+"/": { $0 / $1 }]
+
+func mathStuffFactory(opString: String) -> (Double, Double) -> Double {
+switch opString {
+case "+":
+return {x, y in x + y }
+case "-":
+return {x, y in x - y }
+case "*":
+return {x, y in x * y }
+case "/":
+return {x, y in x / y }
+default:
+return {x, y in x + y }
+
+}
+}
+
+enum Operations: String {
+case add = "+"
+case subtract = "-"
+case multiply = "*"
+case divide = "/"
+
+}
+
+let mathsymbol = String = operations {
+var mathOperation: (Double, Double) -> Double
+
+if mathSymbol == "?" {
+let randomOperations = operations.randomElement()!
+mathOperation = randomOperations.value
+
+}
+
+}
+
+
+var operation: ([Operation: (Double, Double) -> Double]) = [.add: { $0 + $1 },
+.subtract: { $0 - $1 },
+.multiply: { $0 * $1 },
+.divide: { $0 / $1 }]
+
+var UserInput = [String.SubSequence]()
+var UserOutput = [String.SubSequence]()
+
+func currentMath () {
+print ("calculation", terminator: "")
+
+guard let userInput = readLine()else {return}
+
+if userInput == ""{print("wrong input."); return }
+
+}
+
+func myFilterArr(inputArray: [Int], filter: (Int) -> Bool) -> [] {
+var arr1: [Int] = []
+for a in inputArray {
+if filter(a) {
+arr1.append(a)
+}
+}
+return arr1
+}
+
+func myMapArr(inputArray: [Int], map: (Int) -> Double) -> [Double] {
+var arr2: [Double] = []
+
+for b in inputArray {
+arr2.append(map(b))
+}
+return arr2
+
+//func will include a func for each iteam in the collection
+
+}
+
+
+func myReduceArr(inputArray: [Int], initial: Double, reduce: (Double, Double) -> Double) -> Double {
+var arr3: Double = initial
+for x in inputArray {
+arr3 = reduce(Double(arr3), Double(x))
+
+}
+return arr3
+}
+
+
+
+func highOrder () {
+
+switch highOrder {
+case "filter"
+if highOrderSymbol == ">" {
+
+}
+
+}
+```
